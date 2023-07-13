@@ -1,0 +1,188 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*Navigasi yg dipaling atas*/
+.navigation {
+    height: 90px;
+    width: 100%;
+    background: #567189;
+
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation img {
+    padding: 30px;
+}
+.navigation p {
+    color: white;
+    position: absolute;
+    left: 120px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.navigation h1 {
+    color: white;
+    position: absolute;
+    left: 650px;
+    font-size: 30px;
+}
+
+.navigation ul {
+    float: right;
+    margin-right: 40px ;
+}
+
+
+/*Navigation yang Logout*/
+.navigation .btnLogout-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.navigation .btnLogout-popup:hover {
+    background: #fff;
+    color: #083e58;
+}
+
+
+/*Sidebar kiri layar*/
+.sidebar {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #567189;
+    transition: all .5s ease;
+}
+
+.sidebar h1 {
+    font-size: 22px;
+    top: 80px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: #2d5a81;
+    user-select: none;
+}
+
+.sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+    transition: .4s;
+}
+
+ul li:hover a {
+    padding-left: 50px;
+}
+
+.sidebar ul a ion-icon {
+    margin-right: 16px;
+}
+
+
+#check {
+    display: none;
+}
+label #btn,label #cancel {
+    position: absolute;
+    cursor: pointer;
+    background: #083e58;
+    border-radius: 3px;
+    
+}
+
+/*Kotak garis tiga*/
+label #btn {
+    left: 35px;
+    top: 100px;
+    font-size: 35px;
+    color: white;
+    
+    padding: 6px 12px;
+    transition: all .5s;
+}
+label #cancel {
+    z-index: 1111;
+    left: -195px;
+    top: 100px;
+    margin-left: 10px;
+    font-size: 25px;
+    color: white;
+    padding: 3px 6px;
+    transition: all .5s ease;
+}
+#check:checked ~ .sidebar {
+    left: 0;
+}
+#check:checked ~ label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~ label #cancel {
+    left: 195px;
+}
+#check:checked ~ section {
+    margin-left: 250px;
+}
+
+section {
+    background: #7B8FA1;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: all .5s;
+}
+
+.form-box {
+    position: relative;
+    width: 1000px;
+    height: 550px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    
+    padding-top: 20px;
+    padding-left: 50px;
+    margin-left: 200px;
+    top: 30px;
+}
+
+/*Table*/
+table {
+    width: 900px;
+    color: white;
+}
