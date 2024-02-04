@@ -18,7 +18,8 @@
         <h1>Create RPS</h1>
 
         <ul>
-            <button class="btnLogout-popup">Log out</button>
+            <a href="/Login/index.html"><button class="btnLogout-popup">Log out</button></a>
+            
         </ul>
     </nav>
 
@@ -30,14 +31,16 @@
     </label>
 
     <div class="sidebar">
-        <h1>Menu Navigasi</h1>
+        <h1>Menu In Create</h1>
         <ul>
-            <li><a href="#"> <ion-icon name="grid-sharp"></ion-icon>Dashboard</a></li>
-            <li><a href="#"> <ion-icon name="create-sharp"></ion-icon></i>Create RPS</a></li>
-            <li><a href="#"> <ion-icon name="list-sharp"></ion-icon></i>Daftar RPS</a></li>
-            <li><a href="#"> <ion-icon name="eye-sharp"></ion-icon></i>View RPS</a></li>
-            <li><a href="#"> <ion-icon name="book-sharp"></ion-icon></i>Panduan dan Fitur</a></li>
-            <li><a href="#"> <ion-icon name="settings-sharp"></ion-icon></i>Settings</a></li>
+            <a href="/CreateRPS/headerRPS.html">Header RPS</a>
+            <li><a href="/CreateRPS/createrps.html">Identitas RPS</a></li>
+            <li><a href="/CreateRPS/gambaranRPS.html">Gambaran Umum RPS</a></li>
+            <li><a href="/CreateRPS/capaianRPS.html">Capaian Pembelajaran</a></li>
+
+            <li><a href="/viewRPS NEW/viewrps.html"> <ion-icon name="eye-sharp"></ion-icon></i>View RPS</a></li>
+            <li><a href="/dashboard/dashboard.html"> <ion-icon name="grid-sharp"></ion-icon></i>Back to Dashboard</a></li>
+            <li><a href="/setting.html/setting.html"> <ion-icon name="settings-sharp"></ion-icon></i>Settings</a></li>
         </ul>
     </div>
 
@@ -46,7 +49,9 @@
         <div class="form-box">
             <div class="form-value">
                 <form id="login" action="post">
+
                     <form id="login" action="post" class="input-group">
+                        <h3>Identitas RPS</h3>
                         <label for="validationDefault01" class="form-label">Nama Matakuliah</label>
                         <input type="text" name="nama_matakuliah" id="validationDefault01" class="input-field" placeholder="Masukkan Nama Mata Kuliah" required>
                         <br>
